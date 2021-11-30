@@ -194,7 +194,11 @@ img {
     grid-column:  1 / -1;
 }
 
-.habilidad-html5{
+.habilidad-html5,
+.habilidad-js,
+.habilidad-css3,
+.habilidad-github
+{
     margin:auto
 }
 
