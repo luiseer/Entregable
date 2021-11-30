@@ -1,4 +1,5 @@
 /*GENERALES*/
+
 :root {
     --negro: #000;
     --gris: #5a5959;
@@ -31,7 +32,23 @@ html {
     }
 }
 
+.boton {
+    background-color: var(--secundario);
+    color: var(--principal);
+    padding: 0.5rem 1rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    width: 50%;
+    text-align: center;
+    border: none;
+}
+
+
 /*Etiquetas HTML*/
+
 body {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
@@ -87,12 +104,16 @@ a {
 p {
     margin: 0;
     text-align: center;
+    line-height: 1.5;
 }
 
 img {
     width: 100%;
 }
+
+
 /*CLASES*/
+
 .header {
     margin-top: 1.5rem;
     margin-bottom: 5rem;
@@ -132,30 +153,39 @@ img {
     /* align-items: center; */
 }
 
-
-.img-acerca-de-mi{
+.img-acerca-de-mi {
     max-width: 20rem;
     margin: 0 auto;
 }
 
-
 @media (min-width: 768px) {
-        .acerca-de-mi{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            align-items: center;
-        }
- }
+    .acerca-de-mi {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
 
 .contenedor {
     max-width: 160rem;
     margin: 0 auto;
 }
 
-
 .navegacion-principal a:hover {
     color: var(--principal);
     border-bottom: 1px solid var(--secundario);
+}
+
+.grid-svg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 10rem;
+}
+
+@media only screen and (min-width: 768px) {
+    .grid-svg {
+        grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 .footer {
@@ -163,20 +193,9 @@ img {
     color: var(--amarilloDark);
 }
 
-.boton {
-    background-color: var(--secundario);
-    color: var(--principal);
-    padding: 0.5rem 1rem;
-    font-size: 1.5rem;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 700;
-    border-radius: 0.5rem;
-    width: 50%;
-    text-align: center;
-    border: none;
-}
+
 /*ANIMACIONES*/
+
 @keyframes escribiendo {
     0% {
         width: 0;
