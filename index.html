@@ -130,7 +130,7 @@
                 </div>
                 <div class="img-store">
                     <a href="#"> <img src="./img/store.JPG" alt=""> </a>
-               
+
                 </div>
                 <div class="img-festival">
                     <a href="#"> <img src="./img/festival.JPG" alt=""></a>
@@ -139,7 +139,7 @@
                     <a href="#"><img src="./img/cjf.JPG" alt=""> </a>
                 </div>
 
-                
+
             </div>
 
         </section>
@@ -153,39 +153,55 @@
         </section>
 
     </main>
+
     <section>
-        <div id="contacto" class="contacto">
-            <h2>Contacto</h2>
-            <form class="formulario" action="#" method="POST">
-                <legend>Contactános llenando todos los campos</legend>
 
-                <div class="contenedor-campos">
-                    <div class="campo">
-                        <label>Nombre</label>
+        <h2>Contacto</h2>
 
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                    </div>
-                    <div class="campo">
-                        <label>Teléfono</label>
+        <form class="formulario" action="#" method="POST">
 
-                        <input type="tel" name="telefono" placeholder="Teléfono">
-                    </div>
-                    <div class="campo w-100">
-                        <label>Correo</label>
+            <!--<fieldset>-->
 
-                        <input type="mail" name="correo" placeholder="Mail">
-                    </div>
-                    <div class="campo w-100">
-                        <label>Mensaje:</label>
+            <legend>Contactanos Llenando todos los campos</legend>
+            <div class="contenedor-campos">
 
-                        <textarea></textarea>
-                    </div>
+
+                <div class="campo">
+
+                    <label>Nombre</label>
+                    <input class="input-text" type="text" placeholder="Escribe tu nombre">
+
                 </div>
-                <div class="enviar">
-                    <input class="boton" type="submit" value="Enviar">
+
+                <div class="campo">
+                    <label>Telefono</label>
+                    <input class="input-text" type="tel" placeholder="Escribe tu telefono">
                 </div>
-            </form>
-        </div>
+
+
+                <div class="campo">
+                    <label>Correo</label>
+                    <input class="input-text" type="email" placeholder="Escribe tu correo">
+                </div>
+
+                <div class="campo p-mnsj">
+                    <label>Mensaje</label>
+                    <textarea class="input-text"></textarea>
+                </div>
+
+
+            </div>
+            <!--contenedor-campos-->
+
+            <div class="alinear-derecha flex">
+                <input class="boton" type="submit" value="Enviar">
+            </div>
+
+
+            <!--</fieldset>-->
+
+        </form>
+
     </section>
 
     <footer class="footer">
