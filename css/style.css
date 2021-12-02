@@ -2,6 +2,7 @@
 
 :root {
     --negro: #000;
+    --grisObscuro: #212121;
     --gris: #5a5959;
     --blanco: #fff;
     --principal: #08fdd8;
@@ -54,7 +55,7 @@ html {
 body {
     font-size: 16px;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--negro);
+    background-color: var(--grisObscuro);
     color: var(--blanco);
 }
 
@@ -219,7 +220,7 @@ img {
 }
 
 .formulario {
-    background-color: var(--gris);
+    background-color: var(--negro);
     width: min( 70rem, 100%);
     /*min utiliza el valor más pequeño*/
     margin: 0 auto;
