@@ -9,40 +9,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&family=Open+Sans:wght@400;800&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/90d8d1f277.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header-img">
-            <a href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="50" height="50" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ed66ed" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <polyline points="5 12 3 12 12 3 21 12 19 12" />
-                    <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
-                    <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-                </svg>
-            </a>
-        </div>
-
-        <div class="header-nav">
+    <header>
             <nav class="navegacion-principal">
-                <a href="#">Acerca de mí</a>
-                <a href="#">Mis Habilidades</a>
-                <a href="#">Portafolio</a>
-                <a href="#">Blog</a>
-                <a href="#">Contacto</a>
+                <div class="enlace"><a href="#">Acerca de mí</a></div>
+                <div class="enlace"><a href="#">Portafolio</a></div>
+                <div class="enlace"><a href="#">Blog</a></div>
+                <div class="enlace"><a href="#">Contacto</a></div>  
             </nav>
-        </div>
-
     </header>
 
     <div class="titulo">
-        <h1>Hola, Soy Luis,<span> Web Delevolper</span></h1>
+
+        <div class="texto-titulo">
+            <h1>Hola, Soy Luis,<span> Web Delevolper</span></h1>
+        </div>
+        <div class="parrrafo-titulo">
+            <p>Full stack Developer</p>
+        </div>
+        <div class="boton-titulo">
+            <a>Contactame!</a>
+        </div>
+
     </div>
 
     <main class="contenedor">
+
+
+        <section>
+            <h2>Mí Portafolio</h2>
+            <div class="grid-portafolio">
+                <div class="img-freelancer">
+                    <a target="_blanck" href="https://luisfreelancer202.netlify.app/"> <img src="./img/freelancer.JPG" alt=""> </a>
+                </div>
+                <div class="img-store">
+                    <a target="_blanck" href="https://store-frontend-luis.netlify.app/index.html"> <img src="./img/store.JPG" alt=""> </a>
+
+                </div>
+                <div class="img-festival">
+                    <a target="_blanck" href="https://2021fest.netlify.app/"> <img src="./img/festival.JPG" alt=""></a>
+                </div>
+                <div class="img-cjf">
+                    <a target="_blanck" href="https://portal-rec-sur.netlify.app/index.html"><img src="./img/cjf.JPG" alt=""> </a>
+                </div>
+
+            </div>
+
+        </section>
 
         <section>
             <div class="acerca-de-mi">
@@ -120,27 +138,7 @@
             <!-- Termina grid-svg -->
 
         </section>
-        <section>
-            <h2>Portafolio</h2>
-            <div class="grid-portafolio">
-                <div class="img-freelancer">
-                    <a href="#"> <img src="./img/freelancer.JPG" alt=""> </a>
-                </div>
-                <div class="img-store">
-                    <a href="#"> <img src="./img/store.JPG" alt=""> </a>
 
-                </div>
-                <div class="img-festival">
-                    <a href="#"> <img src="./img/festival.JPG" alt=""></a>
-                </div>
-                <div class="img-cjf">
-                    <a href="#"><img src="./img/cjf.JPG" alt=""> </a>
-                </div>
-
-
-            </div>
-
-        </section>
         <section>
             <h2>Blog</h2>
             <aside>

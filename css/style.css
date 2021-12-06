@@ -33,6 +33,11 @@ html {
     }
 }
 
+.contenedor {
+    max-width: 160rem;
+    margin: 0 auto;
+}
+
 .boton {
     background-color: var(--secundario);
     /*Codigo para boton en CSS*/
@@ -47,6 +52,27 @@ html {
     width: 90%;
     text-align: center;
     border: none;
+}
+
+.boton-titulo {
+    background-color: var(--principal);
+    /*Codigo para boton en CSS*/
+    color: var(--secundario);
+    padding: 1rem 3rem;
+    margin: 2rem auto;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: .5rem;
+    width: 65%;
+    text-align: center;
+    border: none;
+}
+
+@media(min-width:768px) {
+    .boton-titulo {
+        width: 30%;
+    }
 }
 
 
@@ -95,7 +121,7 @@ h2 {
     margin: 0 auto;
     margin-bottom: 2rem;
     text-align: center;
-    font-size: 2.9rem;
+    font-size: 4rem;
     color: var(--principal);
     font-weight: 800;
 }
@@ -117,42 +143,32 @@ img {
 
 /*CLASES*/
 
-.header {
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-@media (min-width: 768px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-}
-
-.header a {
-    font-size: 1.5rem;
-    color: var(--secundario);
-    padding: 2.5rem;
-    margin-bottom: 1rem;
-}
-
 .navegacion-principal {
-    margin: 0 auto;
-    padding-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    padding: 5rem;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    color: var(--secundario);
+    font-size: 1.8rem;
 }
 
 .titulo {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 30rem;
+    margin-bottom: 30rem;
+}
+
+.texto-titulo {
+    padding: 2rem;
 }
 
 .acerca-de-mi {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 30rem;
     /* align-items: center; */
 }
 
@@ -167,11 +183,6 @@ img {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
     }
-}
-
-.contenedor {
-    max-width: 160rem;
-    margin: 0 auto;
 }
 
 .navegacion-principal a:hover {
@@ -209,6 +220,7 @@ img {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    margin-bottom: 30rem;
 }
 
 @media(min-width: 768px) {
