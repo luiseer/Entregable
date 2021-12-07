@@ -64,17 +64,22 @@ html {
     text-transform: uppercase;
     font-weight: 700;
     border-radius: .5rem;
-    width: 65%;
+    width: 55%;
     text-align: center;
     border: none;
 }
 
-@media(min-width:768px) {
-    .boton-titulo {
-        width: 30%;
-    }
+.boton-titulo:hover{
+    cursor: pointer;
+    background-color: var(--secundario);
+    color: var(--principal);
 }
 
+@media(min-width:768px) {
+    .boton-titulo {
+        width: 25%;
+    }
+}
 
 /*Etiquetas HTML*/
 
@@ -152,7 +157,7 @@ img {
 
 .navegacion-principal a {
     color: var(--secundario);
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .titulo {
