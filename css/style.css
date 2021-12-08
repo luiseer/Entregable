@@ -154,8 +154,14 @@ img {
     flex-direction: column;
     justify-content: space-around;
     background-color: var(--negro);
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--varientaDePrincipal);
     /* box-shadow: 1px 1px 1px 1px var(--blanco); */
+    /*position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    */
 }
 
 .navegacion-principal a {
@@ -170,7 +176,7 @@ img {
 
 .enlace {
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 
 @media (min-width: 768px) {
