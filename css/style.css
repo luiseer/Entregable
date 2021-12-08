@@ -1,8 +1,8 @@
 /*GENERALES*/
 
 :root {
-    --negro: #000;
-    --grisObscuro: #212121;
+    --negro: rgb(34, 34, 34);
+    --grisObscuro: #292828;
     --gris: #5a5959;
     --blanco: #fff;
     --principal: #08fdd8;
