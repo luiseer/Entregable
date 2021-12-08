@@ -148,16 +148,25 @@ img {
 
 /*CLASES*/
 
-.navegacion-principal {
+.navegacion-principal{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    background-color: var(--negro);
+    padding-bottom: 4rem;
+    /* box-shadow: 1px 1px 1px 1px var(--blanco); */
 }
 
 .navegacion-principal a {
     color: var(--secundario);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
+
+.navegacion-principal a:hover {
+    color: var(--principal);
+    border-bottom: 2px  solid var(--secundario);
+}
+
 .enlace{
     text-align: center;
     margin-top: 5rem;
@@ -173,10 +182,8 @@ img {
     }
  }
 
- 
-
 .titulo {
-    margin-top: 30rem;
+    margin-top: 20rem;
     margin-bottom: 30rem;
 }
 
@@ -195,6 +202,7 @@ img {
 .img-acerca-de-mi {
     max-width: 20rem;
     margin: 0 auto;
+    filter: grayscale(100%);
 }
 
 @media (min-width: 768px) {
@@ -205,9 +213,24 @@ img {
     }
 }
 
-.navegacion-principal a:hover {
-    color: var(--principal);
-    border-bottom: 1px solid var(--secundario);
+.portafolio{
+    margin-top: 50rem;
+}
+
+.grid-portafolio {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+    margin-bottom: 30rem;
+}
+
+@media(min-width: 768px) {
+    .grid-portafolio {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
 }
 
 .grid-svg {
@@ -233,22 +256,6 @@ img {
 .habilidad-css3,
 .habilidad-github {
     margin: auto
-}
-
-.grid-portafolio {
-    padding: 3rem;
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    gap: 2rem;
-    margin-bottom: 30rem;
-}
-
-@media(min-width: 768px) {
-    .grid-portafolio {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
 }
 
 .formulario {
