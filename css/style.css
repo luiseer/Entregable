@@ -150,15 +150,30 @@ img {
 
 .navegacion-principal {
     display: flex;
-    flex-direction: row;
-    padding: 5rem;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .navegacion-principal a {
     color: var(--secundario);
     font-size: 1.5rem;
 }
+.enlace{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+@media (min-width: 768px) {
+    .navegacion-principal{
+        display: flex;
+        flex-direction: row;
+    }
+    .enlace{
+        margin-top: 3rem;
+    }
+ }
+
+ 
 
 .titulo {
     margin-top: 30rem;
