@@ -69,7 +69,7 @@ html {
     border: none;
 }
 
-.boton-titulo:hover{
+.boton-titulo:hover {
     cursor: pointer;
     background-color: var(--secundario);
     color: var(--principal);
@@ -80,6 +80,7 @@ html {
         width: 25%;
     }
 }
+
 
 /*Etiquetas HTML*/
 
@@ -148,7 +149,7 @@ img {
 
 /*CLASES*/
 
-.navegacion-principal{
+.navegacion-principal {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -164,23 +165,23 @@ img {
 
 .navegacion-principal a:hover {
     color: var(--principal);
-    border-bottom: 2px  solid var(--secundario);
+    border-bottom: 2px solid var(--secundario);
 }
 
-.enlace{
+.enlace {
     text-align: center;
     margin-top: 5rem;
 }
 
 @media (min-width: 768px) {
-    .navegacion-principal{
+    .navegacion-principal {
         display: flex;
         flex-direction: row;
     }
-    .enlace{
+    .enlace {
         margin-top: 3rem;
     }
- }
+}
 
 .titulo {
     margin-top: 20rem;
@@ -213,7 +214,7 @@ img {
     }
 }
 
-.portafolio{
+.portafolio {
     margin-top: 50rem;
 }
 
@@ -233,29 +234,33 @@ img {
     }
 }
 
+section.habilidades {
+    margin-bottom: 30rem;
+}
+
 .grid-svg {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 0 auto;
-    column-gap: 6rem;
+    margin-top: 5rem;
+    column-gap: 5rem;
 }
 
 @media only screen and (min-width: 768px) {
     .grid-svg {
-        grid-template-columns: repeat(6, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
-}
-
-.habilidad-texto {
-    margin: auto;
-    grid-column: 1 / -1;
 }
 
 .habilidad-html5,
 .habilidad-js,
 .habilidad-css3,
 .habilidad-github {
+    padding: 2rem;
     margin: auto
+}
+
+.blog {
+    margin-bottom: 30rem;
 }
 
 .formulario {
