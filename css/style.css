@@ -146,6 +146,9 @@ img {
     width: 100%;
 }
 
+legend{
+    color: var(--secundario);
+}
 
 /*CLASES*/
 
@@ -206,12 +209,6 @@ img {
     /* align-items: center; */
 }
 
-.img-acerca-de-mi {
-    max-width: 20rem;
-    margin: 0 auto;
-    filter: grayscale(100%);
-}
-
 @media (min-width: 768px) {
     .acerca-de-mi {
         display: grid;
@@ -220,8 +217,19 @@ img {
     }
 }
 
+.img-acerca-de-mi {
+    max-width: 20rem;
+    margin: 0 auto;
+    filter: grayscale(100%);
+}
+
+.texto-acerca-de-mi p{
+    padding: 5rem;
+}
+
 .portafolio {
     margin-top: 40rem;
+    padding: 6rem;
 }
 
 .grid-portafolio {
@@ -241,7 +249,7 @@ img {
 }
 
 section.habilidades {
-    margin-bottom: 30rem;
+    margin-bottom: 25rem;
 }
 
 .grid-svg {
@@ -254,6 +262,9 @@ section.habilidades {
     .grid-svg {
         grid-template-columns: repeat(4, 1fr);
     }
+}
+.habilidad-texto{
+    padding: 5rem;
 }
 
 .habilidad-html5,
@@ -268,6 +279,10 @@ section.habilidades {
     margin-bottom: 30rem;
 }
 
+.blog-texto{
+    padding: 5rem;
+}
+
 .formulario {
     background-color: var(--negro);
     width: min( 70rem, 100%);
@@ -275,6 +290,10 @@ section.habilidades {
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
+}
+
+.contacto{
+    padding: 5rem;
 }
 
 .formulario fieldset {
