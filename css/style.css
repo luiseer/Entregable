@@ -240,13 +240,24 @@ legend{
     margin-bottom: 35rem;
 }
 
-@media(min-width: 768px) {
+
+@media(min-width: 480px) {
     .grid-portafolio {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: .8rem;
     }
 }
+
+@media(min-width: 768px) {
+    .grid-portafolio {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .8rem;
+    }
+}
+
+
 
 section.habilidades {
     margin-bottom: 25rem;
